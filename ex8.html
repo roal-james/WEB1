@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <h1>loop & array</h1>
+        <script>
+          var coworkers=['egoing','leezche','duru','taeho', 'jaehi'];
+
+        </script>
+      <h2>co workers</h2>
+      <ui>
+          <script>
+              var alist = document.querySelectorAll('a');
+              var i=0;
+              while(i<alist.length) {
+                document.write('<li><a href="http://a.com/ + coworkers[i] + ">' + coworkers[i] + '</a></li>');
+                i=i+1;
+              }
+          </script>
+      </ui>
+  </body>
+</html>

@@ -3,66 +3,46 @@
   <head>
     <title>WEB1-HTML</title>
     <meta charset="utf-8">
-    <style>
-      body {
-        margin: 10px;
-      }
-      a {
-        text-decoration:none;
-      }
-      h1 {
-        font-size:45px;
-        text-align:center;
-        border-bottom: 1px solid gray;
-        margin: 0px;
-        padding: 20px;
-      }
-      #grid ol {
-        border-right: 1px solid gray;
-        width: 100px;
-        margin: 0px;
-        padding: 20px;
-      }
-      #grid {
-        display: grid;
-        grid-template-columns: 150px 1fr;
-      }
-      #article {
-        padding-left: 25px;
-      }
-      @media (max-width: 800px) {
-        #grid {
-          display: block;
-        }
-        #grid ol {
-          border-right: none;
-        }
-        h1 {
-          border-bottom: none;
-        }
-      }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script>
+    <script src="color.js"></script>
   </head>
   <body>
-    <h1><a href="index.html">JAMES</a></h1>
+    <h1><a href="index.html" target="_blank">JAMES</a></h1>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value==='night') {
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+
+        $('a').css('color', color);
+
+    } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value='night';
+
+        $('a').css('color', color);
+      }
+   ">
     <div id="grid">
     <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JAVASCRIPT</a></li>
+      <li><a href="1.html">Wework</a></li>
+      <li><a href="2.html">Welive</a></li>
+      <li><a href="3.html">Scholarship Foundation</a></li>
     </ol>
     <div id="article">
-    <h2>html이란 무엇인가?</h2>
-    <p><a href="https://www.w3.org/TR/html52/" target="_blank" title="HTML5 specification">hypertext markup language</a> is the standard markup language for creating
-    <strong> <u>web</u> </strong>page web application</p>
-    <p>나 <strong>명승준은</strong> 전자책을 출판하여 수입을 벌어들일 것이며, 나 <strong>명승준은</strong> 디자인으로 캐릭터를 만들어 돈을 벌어들일 것이며,
-    <p style="margin-top:15px;">나 명승준은 카페를 만들어 편안하고 안전한 <u>내자리와</u>  <u>순이 자리를</u> 만들것이다.
-    비스켓은 밀가루가 아닌 코코아 가루로 만들것이다.</p>
-    <img src="wework.jpg"width="30%">
-    <p>나 명승준은 비스켓과 캐나다 커피와 프랑스 커피와 달지 않은 케익크를 만들어 돈을 벌것이다.</p>
-    <p>1층은 공동휴게실, 편의점, <u>브런치 카페를</u>만들것이다.</p>
-    <p>2층은 we-work 사무실을 만들것이다. 3층은 we-live하우스를 만들어서 편안하고 안전하고 행복하고 건강하게 파티를 열면서 재미있게 살것이다.</p>
-    </div>
+      <h2>WHO IS JAMES?</h2>
+        <p>나 명승준은 세계적인 Desinger로, 2D,3D Art work, 캐릭터와 상표를 제작 판매하고, 전자책을 출판하여 돈을 벌어들일 것이며,
+        브런치 카페를 만들어 유기농 쿠키와 카스테라를 만들고 캐나다 커피와 프랑스 커피를 판매하여 돈을 벌것이다. 편안하고 안전한
+        내자리와 순이 자리를 만들것이다. 비스켓은 밀가루가 아닌 코코아 가루로 만들것이다.<br></p>
+        <p>나 명승준은 갑부로 살다가 갑부로 죽을것이다.<br>
+        나 명승준은 순이와 행복하게 살다가 행복하게 죽을 것이다.<br>
+        나 명승준은 순이와 건강하게 살다가 건강하게 죽을것이다.</p>
+        <p>wework 소개<br>1층은 휴게실, 편의점, 브런치 카페를 만들것이다. 2층은 we-work 사무실을 만들 것이다.
+        3층은 we-live house를 만들어서 편안하고 안전하고 행복하고 건강하고, 파티도 열면서 재미있게 살것이다.</p>
+        <img src="wework.jpg" width="35%">
+     </div>
     </div>
   </body>
 </html>
